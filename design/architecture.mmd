@@ -1,0 +1,11 @@
+flowchart TD
+    P["DM from Instagram/TikTok/WhatsApp"] --> W["Webhook (verify signature)"]
+    W --> N["Normalize 
+    (single message shape)"]
+    N --> A["Agent (rules > fuzzy > LLM)
+    Issue code or ask for creator"]
+    A --> E["Enrich lead"]
+    E --> R["Send reply to the user"]
+    R --> D["Save interaction 
+    (Postgres schema)"]
+    D --> X["Analytics (/analytics/creators)"]

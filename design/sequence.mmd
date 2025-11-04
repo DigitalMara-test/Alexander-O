@@ -1,0 +1,13 @@
+sequenceDiagram
+  participant User
+  participant Webhook
+  participant Agent
+  participant Platform
+  participant DB
+
+  User->>Webhook: DM text
+  Webhook->>Agent: normalized message
+  Agent->>Agent: detect creator or ask
+  Agent->>Platform: reply text
+  Platform-->>User: message delivered
+  Agent->>DB: write interaction row

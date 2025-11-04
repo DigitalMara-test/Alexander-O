@@ -1,0 +1,41 @@
+creators:
+  casey_neistat:
+    code: CASEY15OFF
+    aliases:
+      - casey
+      - neistat
+      - casey neistat
+      - "@casey"
+      - "@neistat"
+      - Casey Neistat
+  mkbhd:
+    code: MARQUES20
+    aliases:
+      - marques
+      - brownlee
+      - mkbhd
+      - "@mkbhd"
+      - Marques Brownlee
+  lily_singh:
+    code: LILY25
+    aliases:
+      - lily
+      - singh
+      - lilysuperwoman
+      - "@lilysuperwoman"
+      - Lily Singh
+  peter_mckinnon:
+    code: PETERSVLOG
+    aliases:
+      - peter
+      - mckinnon
+      - petermckinnon24
+      - "@petermckinnon24"
+      - Peter McKinnon
+
+thresholds:
+  fuzzy_accept: 0.8
+
+flags:
+  enable_fuzzy_matching: true
+  enable_llm_fallback: true
